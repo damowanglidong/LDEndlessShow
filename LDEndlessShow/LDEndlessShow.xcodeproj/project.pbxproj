@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68C3039B36AC18CFB8FEDD14 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E103AA32A9571ED1BD466B0 /* libPods.a */; };
 		DD60F9B61CAC149B003383C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9B51CAC149B003383C0 /* main.m */; };
 		DD60F9B91CAC149B003383C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9B81CAC149B003383C0 /* AppDelegate.m */; };
-		DD60F9BC1CAC149B003383C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9BB1CAC149B003383C0 /* ViewController.m */; };
 		DD60F9BF1CAC149B003383C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD60F9BD1CAC149B003383C0 /* Main.storyboard */; };
 		DD60F9C11CAC149B003383C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD60F9C01CAC149B003383C0 /* Assets.xcassets */; };
 		DD60F9C41CAC149B003383C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD60F9C21CAC149B003383C0 /* LaunchScreen.storyboard */; };
 		DD60F9CF1CAC149B003383C0 /* LDEndlessShowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9CE1CAC149B003383C0 /* LDEndlessShowTests.m */; };
 		DD60F9DA1CAC149B003383C0 /* LDEndlessShowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9D91CAC149B003383C0 /* LDEndlessShowUITests.m */; };
+		DDF308871CAD65BA009CB92D /* LDHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF308861CAD65BA009CB92D /* LDHeaderView.m */; };
+		DDF3088A1CAD7A70009CB92D /* LDHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF308891CAD7A70009CB92D /* LDHeaderViewController.m */; };
+		DDF308CC1CAE6930009CB92D /* LDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF308CB1CAE6930009CB92D /* LDHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04B765A59A5CD2FCA91AF198 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3E103AA32A9571ED1BD466B0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EED10C483D9E0BF966468EC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DD60F9B11CAC149B003383C0 /* LDEndlessShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDEndlessShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD60F9B51CAC149B003383C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD60F9B71CAC149B003383C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD60F9B81CAC149B003383C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD60F9BA1CAC149B003383C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DD60F9BB1CAC149B003383C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DD60F9BE1CAC149B003383C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD60F9C01CAC149B003383C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD60F9C31CAC149B003383C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,12 @@
 		DD60F9D51CAC149B003383C0 /* LDEndlessShowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDEndlessShowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD60F9D91CAC149B003383C0 /* LDEndlessShowUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDEndlessShowUITests.m; sourceTree = "<group>"; };
 		DD60F9DB1CAC149B003383C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF308851CAD65BA009CB92D /* LDHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHeaderView.h; sourceTree = "<group>"; };
+		DDF308861CAD65BA009CB92D /* LDHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHeaderView.m; sourceTree = "<group>"; };
+		DDF308881CAD7A70009CB92D /* LDHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHeaderViewController.h; sourceTree = "<group>"; };
+		DDF308891CAD7A70009CB92D /* LDHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHeaderViewController.m; sourceTree = "<group>"; };
+		DDF308CA1CAE6930009CB92D /* LDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHomeViewController.h; sourceTree = "<group>"; };
+		DDF308CB1CAE6930009CB92D /* LDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C3039B36AC18CFB8FEDD14 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A6E1029A8B4EB5A2FDACF0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				04B765A59A5CD2FCA91AF198 /* Pods.debug.xcconfig */,
+				3EED10C483D9E0BF966468EC /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DD60F9A81CAC149B003383C0 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +105,8 @@
 				DD60F9CD1CAC149B003383C0 /* LDEndlessShowTests */,
 				DD60F9D81CAC149B003383C0 /* LDEndlessShowUITests */,
 				DD60F9B21CAC149B003383C0 /* Products */,
+				9A6E1029A8B4EB5A2FDACF0E /* Pods */,
+				E84F0B78C68251787AACB31A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,13 +125,17 @@
 			children = (
 				DD60F9B71CAC149B003383C0 /* AppDelegate.h */,
 				DD60F9B81CAC149B003383C0 /* AppDelegate.m */,
-				DD60F9BA1CAC149B003383C0 /* ViewController.h */,
-				DD60F9BB1CAC149B003383C0 /* ViewController.m */,
 				DD60F9BD1CAC149B003383C0 /* Main.storyboard */,
 				DD60F9C01CAC149B003383C0 /* Assets.xcassets */,
 				DD60F9C21CAC149B003383C0 /* LaunchScreen.storyboard */,
 				DD60F9C51CAC149B003383C0 /* Info.plist */,
 				DD60F9B41CAC149B003383C0 /* Supporting Files */,
+				DDF308851CAD65BA009CB92D /* LDHeaderView.h */,
+				DDF308861CAD65BA009CB92D /* LDHeaderView.m */,
+				DDF308881CAD7A70009CB92D /* LDHeaderViewController.h */,
+				DDF308891CAD7A70009CB92D /* LDHeaderViewController.m */,
+				DDF308CA1CAE6930009CB92D /* LDHomeViewController.h */,
+				DDF308CB1CAE6930009CB92D /* LDHomeViewController.m */,
 			);
 			path = LDEndlessShow;
 			sourceTree = "<group>";
@@ -140,6 +166,14 @@
 			path = LDEndlessShowUITests;
 			sourceTree = "<group>";
 		};
+		E84F0B78C68251787AACB31A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E103AA32A9571ED1BD466B0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD60F9DE1CAC149B003383C0 /* Build configuration list for PBXNativeTarget "LDEndlessShow" */;
 			buildPhases = (
+				87E9B7BB38B83A709F7773D8 /* Check Pods Manifest.lock */,
 				DD60F9AD1CAC149B003383C0 /* Sources */,
 				DD60F9AE1CAC149B003383C0 /* Frameworks */,
 				DD60F9AF1CAC149B003383C0 /* Resources */,
+				7AA5F7D4227461F33E5D121E /* Embed Pods Frameworks */,
+				00C10D6A99FE85B7F515E63F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,14 +302,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00C10D6A99FE85B7F515E63F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AA5F7D4227461F33E5D121E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87E9B7BB38B83A709F7773D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD60F9AD1CAC149B003383C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD60F9BC1CAC149B003383C0 /* ViewController.m in Sources */,
+				DDF308871CAD65BA009CB92D /* LDHeaderView.m in Sources */,
+				DDF308CC1CAE6930009CB92D /* LDHomeViewController.m in Sources */,
 				DD60F9B91CAC149B003383C0 /* AppDelegate.m in Sources */,
 				DD60F9B61CAC149B003383C0 /* main.m in Sources */,
+				DDF3088A1CAD7A70009CB92D /* LDHeaderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +498,7 @@
 		};
 		DD60F9DF1CAC149B003383C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04B765A59A5CD2FCA91AF198 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LDEndlessShow/Info.plist;
@@ -422,6 +510,7 @@
 		};
 		DD60F9E01CAC149B003383C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EED10C483D9E0BF966468EC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LDEndlessShow/Info.plist;
@@ -498,6 +587,7 @@
 				DD60F9E01CAC149B003383C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD60F9E11CAC149B003383C0 /* Build configuration list for PBXNativeTarget "LDEndlessShowTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +596,7 @@
 				DD60F9E31CAC149B003383C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD60F9E41CAC149B003383C0 /* Build configuration list for PBXNativeTarget "LDEndlessShowUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +605,7 @@
 				DD60F9E61CAC149B003383C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
