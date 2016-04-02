@@ -10,14 +10,14 @@
 @class LDHeaderView;
 
 @protocol LDHeaderViewDelegate <NSObject>
-
+@optional;
 - (void)headerView:(LDHeaderView *)headerView didSeletedAtIndex:(NSInteger)index withImages:(NSArray *)imgs;
 
 @end
 
 @interface LDHeaderView : UIView
 
-+ (UIView *) endlessWithImageArray:(NSArray *) array withRect:(CGRect)rect;
+
 - (instancetype)initWithFrame:(CGRect)frame withImagesArray:(NSMutableArray *)array;
 @property (nonatomic, weak)id<LDHeaderViewDelegate> delegate;
 @end

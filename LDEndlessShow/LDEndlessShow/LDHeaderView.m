@@ -31,36 +31,6 @@
     return _imgs;
 }
 
-+ (UIView *) endlessWithImageArray:(NSArray *) array withRect:(CGRect)rect{
-
-    LDHeaderView * headerView = [[LDHeaderView alloc] initWithFrame:rect];
-//    [headerView initScrollView:headerView];
-    UIScrollView * scrollView = [[UIScrollView alloc] initWithFrame:headerView.bounds];
-    scrollView.contentSize = CGSizeMake(headerView.bounds.size.width * array.count, 0);
-    [headerView addSubview:scrollView];
-    headerView.backgroundColor = [UIColor redColor];
-    CGFloat x = 0;
-    
-    for (int i = 0; i < array.count; i++) {
-        UIImageView * imgView = [[UIImageView alloc] initWithFrame:CGRectMake(x, 0, headerView.frame.size.width, headerView.frame.size.height)];
-//        if ([array[i] hasPrefix:@"http://"]) {
-//            //根据图片地址下载图片
-//            [imgView sd_setImageWithURL:[NSURL URLWithString:array[i]]];
-//        }else{
-            UIImage  * image =[UIImage imageNamed:array[i]];
-            imgView .image = image;
-            [headerView.imgs addObject:image];
-//        }
-        imgView.tag = i ;
-        imgView.userInteractionEnabled = YES;
-        [imgView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:headerView action:@selector(didClickImageView:)]];
-        [scrollView addSubview:imgView];
-        x += headerView.bounds.size.width;
-   }
-    return headerView;
-
-}
-
 //构造方法的重写
 - (instancetype)initWithFrame:(CGRect)frame withImagesArray:(NSMutableArray *)array
 {
@@ -100,7 +70,7 @@
             x += self.bounds.size.width;
         }
         [self initPageControl];
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(pageCountUpdata:) userInfo:nil repeats:YES];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(pageCountUpdata:) userInfo:nil repeats:YES];
     }
 
     return self;
@@ -110,7 +80,7 @@
 {
     if ([self.delegate respondsToSelector:@selector(headerView:didSeletedAtIndex:withImages:)])
     {
-        [self.delegate headerView:(LDHeaderView *)tap.view didSeletedAtIndex:tap.view.tag + 1 withImages:self.imgs ];
+        [self.delegate headerView:(LDHeaderView *)tap.view didSeletedAtIndex:tap.view.tag withImages:self.imgs ];
     }
 
 
@@ -132,9 +102,9 @@
     CGFloat x = (self.frame.size.width - w) * 0.5;
     self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(x, self.frame.size.height * 0.9, w, 0)];
     self.pageControl.numberOfPages = self.imgs.count - 2;
-    self.pageControl.currentPageIndicatorTintColor = [UIColor redColor];
+    self.pageControl.currentPageIndicatorTintColor = [UIColor orangeColor];
     self.pageControl.currentPage   = 0;
-    self.pageControl.pageIndicatorTintColor = [UIColor blueColor];
+    self.pageControl.pageIndicatorTintColor = [UIColor whiteColor];
     [self addSubview:_pageControl];
 
 }

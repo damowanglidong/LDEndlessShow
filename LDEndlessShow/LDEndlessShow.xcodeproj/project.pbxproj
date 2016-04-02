@@ -18,6 +18,10 @@
 		DDF308871CAD65BA009CB92D /* LDHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF308861CAD65BA009CB92D /* LDHeaderView.m */; };
 		DDF3088A1CAD7A70009CB92D /* LDHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF308891CAD7A70009CB92D /* LDHeaderViewController.m */; };
 		DDF308CC1CAE6930009CB92D /* LDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF308CB1CAE6930009CB92D /* LDHomeViewController.m */; };
+		DDF308F71CAF5A37009CB92D /* UIView+endlessShow.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF308F61CAF5A37009CB92D /* UIView+endlessShow.m */; };
+		DDF3094E1CAFD584009CB92D /* LDAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF3094B1CAFD584009CB92D /* LDAnimationView.m */; };
+		DDF3094F1CAFD584009CB92D /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF3094D1CAFD584009CB92D /* UIView+Animation.m */; };
+		DDF309521CAFD605009CB92D /* LDSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF309511CAFD605009CB92D /* LDSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,14 @@
 		DDF308891CAD7A70009CB92D /* LDHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHeaderViewController.m; sourceTree = "<group>"; };
 		DDF308CA1CAE6930009CB92D /* LDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHomeViewController.h; sourceTree = "<group>"; };
 		DDF308CB1CAE6930009CB92D /* LDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHomeViewController.m; sourceTree = "<group>"; };
+		DDF308F51CAF5A37009CB92D /* UIView+endlessShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+endlessShow.h"; sourceTree = "<group>"; };
+		DDF308F61CAF5A37009CB92D /* UIView+endlessShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+endlessShow.m"; sourceTree = "<group>"; };
+		DDF3094A1CAFD584009CB92D /* LDAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDAnimationView.h; sourceTree = "<group>"; };
+		DDF3094B1CAFD584009CB92D /* LDAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDAnimationView.m; sourceTree = "<group>"; };
+		DDF3094C1CAFD584009CB92D /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		DDF3094D1CAFD584009CB92D /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		DDF309501CAFD605009CB92D /* LDSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSecondViewController.h; sourceTree = "<group>"; };
+		DDF309511CAFD605009CB92D /* LDSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,19 +135,11 @@
 		DD60F9B31CAC149B003383C0 /* LDEndlessShow */ = {
 			isa = PBXGroup;
 			children = (
-				DD60F9B71CAC149B003383C0 /* AppDelegate.h */,
-				DD60F9B81CAC149B003383C0 /* AppDelegate.m */,
-				DD60F9BD1CAC149B003383C0 /* Main.storyboard */,
-				DD60F9C01CAC149B003383C0 /* Assets.xcassets */,
-				DD60F9C21CAC149B003383C0 /* LaunchScreen.storyboard */,
-				DD60F9C51CAC149B003383C0 /* Info.plist */,
+				DDF309491CAFD4E2009CB92D /* animationShowSDK */,
+				DDF308FA1CAF6CEA009CB92D /* others */,
+				DDF308F91CAF6CBA009CB92D /* demonstrateController */,
+				DDF308F81CAF6C9D009CB92D /* endlessShowSDK */,
 				DD60F9B41CAC149B003383C0 /* Supporting Files */,
-				DDF308851CAD65BA009CB92D /* LDHeaderView.h */,
-				DDF308861CAD65BA009CB92D /* LDHeaderView.m */,
-				DDF308881CAD7A70009CB92D /* LDHeaderViewController.h */,
-				DDF308891CAD7A70009CB92D /* LDHeaderViewController.m */,
-				DDF308CA1CAE6930009CB92D /* LDHomeViewController.h */,
-				DDF308CB1CAE6930009CB92D /* LDHomeViewController.m */,
 			);
 			path = LDEndlessShow;
 			sourceTree = "<group>";
@@ -143,6 +147,10 @@
 		DD60F9B41CAC149B003383C0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DD60F9C01CAC149B003383C0 /* Assets.xcassets */,
+				DD60F9BD1CAC149B003383C0 /* Main.storyboard */,
+				DD60F9C21CAC149B003383C0 /* LaunchScreen.storyboard */,
+				DD60F9C51CAC149B003383C0 /* Info.plist */,
 				DD60F9B51CAC149B003383C0 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -164,6 +172,50 @@
 				DD60F9DB1CAC149B003383C0 /* Info.plist */,
 			);
 			path = LDEndlessShowUITests;
+			sourceTree = "<group>";
+		};
+		DDF308F81CAF6C9D009CB92D /* endlessShowSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DDF308851CAD65BA009CB92D /* LDHeaderView.h */,
+				DDF308861CAD65BA009CB92D /* LDHeaderView.m */,
+				DDF308F51CAF5A37009CB92D /* UIView+endlessShow.h */,
+				DDF308F61CAF5A37009CB92D /* UIView+endlessShow.m */,
+			);
+			name = endlessShowSDK;
+			sourceTree = "<group>";
+		};
+		DDF308F91CAF6CBA009CB92D /* demonstrateController */ = {
+			isa = PBXGroup;
+			children = (
+				DDF308881CAD7A70009CB92D /* LDHeaderViewController.h */,
+				DDF308891CAD7A70009CB92D /* LDHeaderViewController.m */,
+				DDF308CA1CAE6930009CB92D /* LDHomeViewController.h */,
+				DDF308CB1CAE6930009CB92D /* LDHomeViewController.m */,
+			);
+			name = demonstrateController;
+			sourceTree = "<group>";
+		};
+		DDF308FA1CAF6CEA009CB92D /* others */ = {
+			isa = PBXGroup;
+			children = (
+				DD60F9B71CAC149B003383C0 /* AppDelegate.h */,
+				DD60F9B81CAC149B003383C0 /* AppDelegate.m */,
+			);
+			name = others;
+			sourceTree = "<group>";
+		};
+		DDF309491CAFD4E2009CB92D /* animationShowSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DDF3094A1CAFD584009CB92D /* LDAnimationView.h */,
+				DDF3094B1CAFD584009CB92D /* LDAnimationView.m */,
+				DDF3094C1CAFD584009CB92D /* UIView+Animation.h */,
+				DDF3094D1CAFD584009CB92D /* UIView+Animation.m */,
+				DDF309501CAFD605009CB92D /* LDSecondViewController.h */,
+				DDF309511CAFD605009CB92D /* LDSecondViewController.m */,
+			);
+			name = animationShowSDK;
 			sourceTree = "<group>";
 		};
 		E84F0B78C68251787AACB31A /* Frameworks */ = {
@@ -355,8 +407,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDF3094E1CAFD584009CB92D /* LDAnimationView.m in Sources */,
+				DDF3094F1CAFD584009CB92D /* UIView+Animation.m in Sources */,
+				DDF309521CAFD605009CB92D /* LDSecondViewController.m in Sources */,
 				DDF308871CAD65BA009CB92D /* LDHeaderView.m in Sources */,
 				DDF308CC1CAE6930009CB92D /* LDHomeViewController.m in Sources */,
+				DDF308F71CAF5A37009CB92D /* UIView+endlessShow.m in Sources */,
 				DD60F9B91CAC149B003383C0 /* AppDelegate.m in Sources */,
 				DD60F9B61CAC149B003383C0 /* main.m in Sources */,
 				DDF3088A1CAD7A70009CB92D /* LDHeaderViewController.m in Sources */,
@@ -502,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LDEndlessShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.www.LDEndlessShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LDEndlessShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iOS.www.LDEndlessShow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
