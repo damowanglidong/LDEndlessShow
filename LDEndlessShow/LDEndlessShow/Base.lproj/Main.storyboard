@@ -36,7 +36,9 @@
                             <outlet property="delegate" destination="uTi-Ke-Bk5" id="JQq-gf-z0g"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="bP4-9l-7uA"/>
+                    <navigationItem key="navigationItem" id="bP4-9l-7uA">
+                        <barButtonItem key="backBarButtonItem" title="主页" id="3Gt-3D-jJt"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RL4-Sy-0qJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

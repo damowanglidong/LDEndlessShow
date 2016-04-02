@@ -1,0 +1,35 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "stretch",
+          "width" : 4,
+          "height" : 3
+        },
+        "cap-insets" : {
+          "bottom" : 62,
+          "top" : 59,
+          "right" : 61,
+          "left" : 59
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "bg_navigationBar_normal.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

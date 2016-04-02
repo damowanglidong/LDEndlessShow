@@ -22,6 +22,7 @@
 		DDF3094E1CAFD584009CB92D /* LDAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF3094B1CAFD584009CB92D /* LDAnimationView.m */; };
 		DDF3094F1CAFD584009CB92D /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF3094D1CAFD584009CB92D /* UIView+Animation.m */; };
 		DDF309521CAFD605009CB92D /* LDSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF309511CAFD605009CB92D /* LDSecondViewController.m */; };
+		DDF309551CB002A4009CB92D /* LDHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF309541CB002A4009CB92D /* LDHomeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		DDF3094D1CAFD584009CB92D /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
 		DDF309501CAFD605009CB92D /* LDSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSecondViewController.h; sourceTree = "<group>"; };
 		DDF309511CAFD605009CB92D /* LDSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSecondViewController.m; sourceTree = "<group>"; };
+		DDF309531CB002A4009CB92D /* LDHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHomeCell.h; sourceTree = "<group>"; };
+		DDF309541CB002A4009CB92D /* LDHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHomeCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				DDF308F91CAF6CBA009CB92D /* demonstrateController */,
 				DDF308F81CAF6C9D009CB92D /* endlessShowSDK */,
 				DD60F9B41CAC149B003383C0 /* Supporting Files */,
+				DDF309531CB002A4009CB92D /* LDHomeCell.h */,
+				DDF309541CB002A4009CB92D /* LDHomeCell.m */,
 			);
 			path = LDEndlessShow;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 				DDF3094F1CAFD584009CB92D /* UIView+Animation.m in Sources */,
 				DDF309521CAFD605009CB92D /* LDSecondViewController.m in Sources */,
 				DDF308871CAD65BA009CB92D /* LDHeaderView.m in Sources */,
+				DDF309551CB002A4009CB92D /* LDHomeCell.m in Sources */,
 				DDF308CC1CAE6930009CB92D /* LDHomeViewController.m in Sources */,
 				DDF308F71CAF5A37009CB92D /* UIView+endlessShow.m in Sources */,
 				DD60F9B91CAC149B003383C0 /* AppDelegate.m in Sources */,

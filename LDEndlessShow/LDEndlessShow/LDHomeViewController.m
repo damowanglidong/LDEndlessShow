@@ -9,6 +9,7 @@
 #import "LDHomeViewController.h"
 #import "LDHeaderViewController.h"
 #import "LDSecondViewController.h"
+#import "LDHomeCell.h"
 
 @interface LDHomeViewController ()
 
@@ -21,14 +22,20 @@
 {
     if (_animationNames == nil)
     {
-        _animationNames = @[@"普通无限轮播", @"cube", @"pageCurl", @"pageUnCurl", @"fade", @"push", @"moveIn", @"reveal", @"oglFlip", @"suckEffect", @"rippleEffect", @"cameralrisHollowOpen", @"cameralrisHollowClose"];
+        _animationNames = @[@"普通无限轮播", @"cube", @"moveIn", @"pageCurl", @"pageUnCurl", @"fade", @"push", @"reveal", @"oglFlip", @"suckEffect", @"rippleEffect", @"cameralrisHollowOpen", @"cameralrisHollowClose"];
     }
     return _animationNames;
+}
++ (void)initialize
+{
+    UINavigationBar * navigationBar = [UINavigationBar appearance];
+    [navigationBar setBackgroundImage:[UIImage imageNamed:@"bg_navigationBar_normal"] forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"无限轮播框架";
     UIBarButtonItem * leftItem = [[UIBarButtonItem alloc] initWithTitle:@"动画开启" style:UIBarButtonItemStylePlain target:self action:@selector(didClickLeftBtn)];
     self.navigationItem.rightBarButtonItem = leftItem;
     
@@ -58,11 +65,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString * ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc]  initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
+    LDHomeCell * cell = [LDHomeCell homeCellWithTableView:tableView];
     NSDate *object = self.animationNames[indexPath.row];
     cell.textLabel.text = [object description];
     return cell;

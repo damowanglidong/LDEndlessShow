@@ -34,6 +34,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = self.typeName;
     NSString * img1 = @"view01";
     NSString * img2 = @"view02";
     NSString * img3 = @"view03";
@@ -42,7 +43,7 @@
     NSString * img6 = @"view06";
     self.arrayM = [[NSMutableArray alloc] initWithObjects:img1, img2, img3, img4, img5, img6, nil];
     self.automaticallyAdjustsScrollViewInsets = YES;
-    self.redView = [UIView endlessAnimationWithRect:CGRectMake(0, 300, self.view.bounds.size.width, 200) withArray:self.arrayM.copy target:self animationTypeName:self.typeName];
+    self.redView = [UIView endlessAnimationWithRect:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 265, self.view.bounds.size.width, 200) withArray:self.arrayM.copy target:self animationTypeName:self.typeName];
     [self.view addSubview: self.redView];
     
 }
