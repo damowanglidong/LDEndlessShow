@@ -42,7 +42,7 @@
 {
     if (self = [super initWithFrame:frame])
     {
-        
+        self.index= -1;
         self.imgArray = array;
         [self initImageView];
         [self initPageControl];
@@ -54,6 +54,7 @@
 {
     if (self = [super initWithFrame:frame])
     {
+        self.index= -1;
         self.typeName = typeName;
         self.imgArray = array;
         [self initImageView];
@@ -93,7 +94,6 @@
 
 - (void)addPageCount
 {
-    self.index = -1;
     self.index ++;
     if (self.index == self.imgArray.count)
     {

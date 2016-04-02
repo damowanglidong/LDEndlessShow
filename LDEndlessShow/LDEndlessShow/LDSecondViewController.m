@@ -42,7 +42,7 @@
     NSString * img6 = @"view06";
     self.arrayM = [[NSMutableArray alloc] initWithObjects:img1, img2, img3, img4, img5, img6, nil];
     self.automaticallyAdjustsScrollViewInsets = YES;
-    self.redView = [UIView endlessAnimationWithRect:CGRectMake(0, 300, 320, 200) withArray:self.arrayM.copy target:self animationTypeName:self.typeName];
+    self.redView = [UIView endlessAnimationWithRect:CGRectMake(0, 300, self.view.bounds.size.width, 200) withArray:self.arrayM.copy target:self animationTypeName:self.typeName];
     [self.view addSubview: self.redView];
     
 }
