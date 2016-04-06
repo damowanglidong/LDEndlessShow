@@ -21,9 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"无限轮播框架";
-
-    
+    self.navigationItem.title = @"无限轮播框架";    
     NSString * img1 = @"view01";
     NSString * img2 = @"view02";
     NSString * img3 = @"view03";
