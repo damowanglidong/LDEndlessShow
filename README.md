@@ -19,7 +19,11 @@ API documentation is available at [LDEndlessShow](https://github.com/search?utf8
 #import "UIView+Animation.h"
 ...
 
-self.tableView.tableHeaderView = [UIView endlessAnimationWithRect:CGRectMake(0, 0, self.view.bounds.size.width, 200) withArray:array target:self animationTypeName:self.typeName];
+self.tableView.tableHeaderView = [UIView endlessAnimationWithRect:
+                                          CGRectMake(0, 0, self.view.bounds.size.width, 200)
+                                          withArray:array
+                                          target:self
+                                          animationTypeName:self.typeName];
 
 ```
 

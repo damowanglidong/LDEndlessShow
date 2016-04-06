@@ -34,10 +34,17 @@
     //传入代理即可实现点击事件
     if (self.typeName == nil)
     {
-        self.tableView.tableHeaderView = [UIView endlessWithframe:CGRectMake(0, 0, self.view.bounds.size.width, 200) withImageArray:array withTarget:self];
+        self.tableView.tableHeaderView = [UIView endlessWithframe:
+                                          CGRectMake(0, 0, self.view.bounds.size.width, 200)
+                                          withImageArray:array
+                                          withTarget:self];
     }else
     {
-        self.tableView.tableHeaderView = [UIView endlessAnimationWithRect:CGRectMake(0, 0, self.view.bounds.size.width, 200) withArray:array target:self animationTypeName:self.typeName];
+        self.tableView.tableHeaderView = [UIView endlessAnimationWithRect:
+                                          CGRectMake(0, 0, self.view.bounds.size.width, 200)
+                                          withArray:array
+                                          target:self
+                                          animationTypeName:self.typeName];
     }
     
 }
